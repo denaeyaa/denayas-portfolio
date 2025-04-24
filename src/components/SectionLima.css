@@ -1,0 +1,139 @@
+/* SectionLima.css */
+
+.section-lima.cv-section {
+  background-color: #ffffff;
+  display: flex; /* Jadikan container utama flex */
+  align-items: flex-start; /* Sejajarkan item dari atas */
+  padding: 20px;
+  gap: 30px; /* Jarak antara preview dan info download */
+}
+
+.preview-container.cv-preview {
+  width: 200px; /* Lebar wadah CV (sesuai permintaan terakhir) */
+  /* height akan diatur otomatis oleh aspectRatio */
+  margin-bottom: 0; /* Hilangkan margin bawah */
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  cursor: zoom-in; /* Default cursor untuk zoom */
+  flex-shrink: 0; /* Agar tidak menyusut */
+  margin-left: 320px;
+}
+
+.preview-container.cv-preview:active {
+  cursor: zoom-out; /* Cursor saat zoom aktif (bisa disesuaikan) */
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out; /* Transisi untuk zoom */
+}
+
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Atau contain, tergantung preferensi */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out; /* Transisi untuk zoom */
+}
+
+
+  .overlay {
+    position: absolute;
+    bottom: 10px; /* Posisikan di bawah */
+    right: 10px; /* Posisikan di kanan */
+    width: 30px; /* Ukuran ikon */
+    height: 30px; /* Ukuran ikon */
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Bentuk lingkaran */
+    font-size: 1.2em;
+    cursor: zoom-in;
+    opacity: 1; /* Ikon selalu terlihat */
+    transition: background-color 0.3s ease-in-out;
+  }
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.download-info {
+  display: flex;
+  flex-direction: column; /* Atur info download menjadi column */
+  gap: 10px;
+  width: auto; /* Biarkan lebar menyesuaikan konten */
+  align-items: flex-start; /* Sejajarkan item di kiri */
+}
+
+.lorem-ipsum {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.download-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none; /* Hilangkan garis bawah pada link */
+  width: auto; /* Lebar menyesuaikan konten */
+  justify-content: flex-start; /* Sejajarkan ikon dan teks di kiri */
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Untuk layar yang lebih kecil dari 768px (misalnya tablet portrait) */
+@media (max-width: 768px) {
+  .preview-container.cv-preview {
+    width: 300px; /* Lebar preview lebih besar lagi */
+  }
+}
+
+/* Untuk layar yang lebih kecil dari 576px (misalnya mobile) */
+@media (max-width: 576px) {
+  .section-lima.cv-section {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .preview-container.cv-preview {
+    width: 90%; /* Lebar preview hampir penuh */
+  }
+
+  .download-info {
+    gap: 10px;
+  }
+
+  .lorem-ipsum {
+    font-size: 0.85em;
+  }
+
+  .download-button {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+}

@@ -1,0 +1,99 @@
+/* SectionTujuh.css */
+
+.section-tujuh {
+  padding: 40px 20px 60px; /* Tambahkan padding-bottom (contoh 60px) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-tujuh h2 {
+  margin-bottom: 20px;
+}
+
+.certificates-container-horizontal {
+  margin-left: 65px;
+  max-width: 1200px; /* Sesuaikan lebar container */
+}
+
+.certificate-slide-horizontal {
+  padding: 0 5px; /* Jarak antar card */
+}
+
+.certificate-card-horizontal-image-only {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Lebar card (sesuaikan) */
+  margin: 20px 0;
+  overflow: hidden; /* Untuk border radius */
+  display: flex; /* Agar gambar di tengah */
+  justify-content: center; /* Tengah horizontal */
+  align-items: center; /* Tengah vertikal */
+}
+
+.certificate-image-container-horizontal-ratio {
+  width: 100%; /* Lebar gambar mengisi card */
+  aspect-ratio: 4 / 3; /* Set rasio 4:3 */
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.certificate-image-horizontal-ratio {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Styling untuk dots navigasi react-slick */
+.section-tujuh .slick-dots {
+  bottom: -40px !important;
+  margin-top: -15px;
+  li button:before {
+    font-size: 10px !important;
+    color: #333 !important;
+    opacity: 0.8 !important;
+  }
+  li.slick-active button:before {
+    color: #007bff !important;
+  }
+}
+
+/* Untuk layar yang lebih kecil dari 1024px (saat slidesToShow menjadi 3) */
+@media (max-width: 1200px) {
+  .certificate-card-horizontal-image-only {
+    margin-top: -10px;
+    width: 250px; /* Perkecil lebar card */
+  }
+}
+
+/* Untuk layar yang lebih kecil dari 768px (di antara breakpoint) */
+@media (max-width: 768px) {
+  .certificate-card-horizontal-image-only {
+    width: 220px; /* Perkecil lagi lebar card */
+  }
+}
+
+/* Untuk layar yang lebih kecil dari 600px (saat slidesToShow menjadi 1) */
+@media (max-width: 600px) {
+  .certificates-container-horizontal {
+    width: 80%; /* Lebar container lebih kecil di mobile */
+  }
+
+  .certificate-card-horizontal-image-only {
+    width: 100%; /* Lebar card mengisi container di mobile */
+    margin: 15px auto; /* Sesuaikan margin */
+  }
+}
+
+/* Untuk layar yang lebih kecil dari 480px (mobile lebih kecil) */
+@media (max-width: 480px) {
+  .certificates-container-horizontal {
+    width: 95%; /* Lebar container hampir penuh di mobile kecil */
+  }
+
+  .certificate-card-horizontal-image-only {
+    margin: 10px auto; /* Sesuaikan margin */
+  }
+}

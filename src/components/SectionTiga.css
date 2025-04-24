@@ -1,0 +1,20 @@
+.section-tiga {
+    background-color: #AEFE00;
+    height: 50px; /* Tinggi kecil untuk marquee */
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Menyembunyikan teks yang keluar dari batas */
+    padding: 0 20px;
+  }
+  
+  .marquee-text {
+    font-size: 1.2em;
+    font-family: Akira;
+    color: black;
+    white-space: nowrap; /* Mencegah teks pindah baris */
+  }
+  
+  .marquee-space {
+    display: inline-block;
+    width: 30px; /* Jarak antar teks */
+  }

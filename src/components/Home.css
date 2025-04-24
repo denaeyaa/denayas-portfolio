@@ -1,0 +1,88 @@
+.home-section {
+    background-color: #0138C8;
+    font-family: 'CelonaCameli';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Membuat section mengisi tinggi viewport */
+    color: white;
+  }
+  
+  .home-text {
+    font-size: 7em;
+    text-align: center;
+    width: 1000px;
+  }
+
+
+    /* Responsive */
+
+  @media (max-width: 1200px) {
+    .home-text {
+      font-size: 6em;
+      width: 600px;
+    }
+  
+    /* Sesuaikan posisi card */
+    .home-section > div:nth-child(2) { /* Card 1 */
+      top: 15%;
+      left: 10%;
+      margin-left: 0;
+    }
+  
+    .home-section > div:nth-child(3) { /* Card 2 */
+      bottom: 10%;
+      right: 10%;
+    }
+  }
+  
+  /* Untuk layar yang lebih kecil dari 768px (misalnya tablet portrait) */
+  @media (max-width: 768px) {
+    .home-text {
+      font-size: 3em;
+    }
+  
+    /* Perkecil ukuran card */
+    .floating-card {
+      width: 60px !important; /* Gunakan !important jika perlu override inline style */
+      height: 70px !important;
+    }
+  
+    .floating-card-text {
+      font-size: 0.6em;
+    }
+  
+    /* Pindahkan card ke posisi yang berbeda */
+    .home-section > div:nth-child(2) { /* Card 1 */
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%) rotate(-17deg);
+    }
+  
+    .home-section > div:nth-child(3) { /* Card 2 */
+      bottom: 5%;
+      right: 50%;
+      transform: translateX(50%) rotate(15deg);
+    }
+  }
+  
+  /* Untuk layar yang lebih kecil dari 480px (misalnya mobile) */
+  @media (max-width: 480px) {
+    .home-text {
+      font-size: 2.8em; /* Mungkin ini masih terlalu besar, coba perkecil lagi */
+      width: 190px; /* Pastikan lebar teks tidak melebihi lebar layar */
+    }
+  
+    /* Hilangkan card pada layar sangat kecil jika terlalu ramai */
+    .home-section > div:nth-child(2),
+    .home-section > div:nth-child(3) {
+      display: none;
+    }
+  }
+  
+  /* Untuk layar yang lebih kecil dari 375px (misalnya iPhone SE atau yang lebih kecil) */
+  @media (max-width: 375px) {
+    .home-text {
+      font-size: 1.5em; /* Coba ukuran yang lebih kecil lagi */
+    }
+  }  

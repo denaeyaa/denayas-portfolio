@@ -1,0 +1,207 @@
+/* Footer.css */
+
+.footer-empat-bagian {
+  width: 100% !important;
+  background-color: #2c2c54; /* Warna latar belakang seperti gambar */
+  color: #f4f4f4;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Membuat 4 kolom responsif */
+  gap: 20px; /* Jarak antar kolom */
+  margin: 0;
+}
+
+.footer-section {
+  text-align: left;
+}
+
+.footer-section h3 {
+  color: #fff; /* Warna judul */
+  margin-bottom: 15px;
+}
+
+/* Style untuk bagian Alamat */
+.footer-section.alamat p {
+  line-height: 1.6;
+}
+
+/* Style untuk bagian Site */
+.footer-section.site ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section.site ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section.site ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section.site ul li a:hover {
+  color: #aaa;
+}
+
+/* Style untuk bagian Sosial */
+.footer-section.sosial ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section.sosial ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section.sosial ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section.sosial ul li a:hover {
+  color: #aaa;
+}
+
+/* Style untuk bagian Newsletter */
+.footer-section.newsletter p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.newsletter-form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px 0 0 5px;
+  background-color: #444;
+  color: #f4f4f4;
+}
+
+.newsletter-form button[type="submit"] {
+  background-color: #a29bfe; /* Warna tombol seperti gambar */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button[type="submit"]:hover {
+  background-color: #6c5ce7;
+}
+
+/* Responsive Design */
+
+/* Untuk layar yang lebih kecil dari 1200px (misalnya tablet landscape) */
+@media (max-width: 1200px) {
+  .footer-empat-bagian {
+    grid-template-columns: repeat(auto-fit, minmax(10px, 170px)); /* Sedikit perkecil ukuran minimal kolom */
+    padding: 20px 10px; /* Sesuaikan padding jika perlu */
+    gap: 0px; /* Sedikit kurangi jarak antar kolom */
+    margin-left: 200px;
+    width: 100% !important;
+    padding-left: 90px;
+  }
+
+  .footer-section {
+    text-align: left; /* Kembalikan ke kiri jika sebelumnya di tengah pada ukuran yang lebih kecil */
+  }
+
+  .footer-section h3 {
+    font-size: 1.1em; /* Sedikit perkecil ukuran judul */
+    margin-bottom: 12px;
+  }
+
+  .footer-section.alamat p,
+  .footer-section.site ul li a,
+  .footer-section.sosial ul li a,
+  .footer-section.newsletter p,
+  .newsletter-form input[type="text"],
+  .newsletter-form button[type="submit"] {
+    font-size: 0.9em; /* Tetap atau sedikit perkecil ukuran teks */
+  }
+
+  .newsletter-form {
+    flex-direction: row; /* Kembalikan form newsletter menjadi baris jika sebelumnya kolom */
+    display: none
+    ;
+  }
+
+  .newsletter-form input[type="text"] {
+    border-radius: 5px 0 0 5px; /* Kembalikan border radius */
+    margin-bottom: 0; /* Hilangkan margin bawah jika ada */
+  }
+
+  .newsletter-form button[type="submit"] {
+    border-radius: 0 5px 5px 0; /* Kembalikan border radius */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-empat-bagian {
+    grid-template-columns: 1fr; /* Satu kolom pada layar kecil */
+    text-align: center; /* Tengahkan teks pada layar kecil */
+    padding: 30px 20px; /* Kurangi sedikit padding */
+  }
+
+  .footer-section {
+    text-align: center; /* Tengahkan semua bagian */
+    margin-bottom: 20px; /* Tambah margin bawah antar bagian */
+  }
+
+  .footer-section.alamat,
+  .footer-section.site,
+  .footer-section.sosial {
+    text-align: center; /* Tetap tengah untuk konsistensi */
+  }
+
+  .newsletter-form {
+    flex-direction: column; /* Form newsletter jadi kolom pada layar kecil */
+  }
+
+  .newsletter-form input[type="text"] {
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .newsletter-form button[type="submit"] {
+    border-radius: 5px;
+  }
+}
+
+/* Untuk layar yang lebih kecil dari 480px (misalnya mobile) */
+@media (max-width: 480px) {
+  .footer-empat-bagian {
+    padding: 20px 15px; /* Kurangi lagi padding */
+  }
+
+  .footer-section h3 {
+    font-size: 1.1em; /* Perkecil ukuran judul */
+    margin-bottom: 10px;
+  }
+
+  .footer-section.alamat p,
+  .footer-section.site ul li a,
+  .footer-section.sosial ul li a,
+  .footer-section.newsletter p,
+  .newsletter-form input[type="text"],
+  .newsletter-form button[type="submit"] {
+    font-size: 0.9em; /* Perkecil ukuran teks */
+  }
+
+  .newsletter-form input[type="text"] {
+    padding: 8px; /* Kurangi padding input */
+  }
+
+  .newsletter-form button[type="submit"] {
+    padding: 8px 12px; /* Kurangi padding tombol */
+  }
+}

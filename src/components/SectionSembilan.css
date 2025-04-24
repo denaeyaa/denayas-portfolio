@@ -1,0 +1,36 @@
+.section-sembilan {
+    background-color: #7A68F0;
+    height: 50px; /* Tinggi kecil untuk marquee */
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Menyembunyikan teks yang keluar dari batas */
+    padding: 0 20px;
+  }
+  
+  .marquee-text {
+    font-size: 1.2em;
+    font-family: Akira;
+    color: black;
+    white-space: nowrap; /* Mencegah teks pindah baris */
+  }
+  
+  .marquee-space {
+    display: inline-block;
+    width: 30px; /* Jarak antar teks */
+  }
+
+  /* Untuk layar yang lebih kecil dari 480px (misalnya mobile) */
+@media (max-width: 480px) {
+  .section-sembilan {
+    height: 35px; /* Perkecil lagi tinggi section */
+    padding: 0 10px; /* Perkecil lagi padding horizontal */
+  }
+
+  .marquee-text {
+    font-size: 0.9em; /* Perkecil lagi ukuran font teks */
+  }
+
+  .marquee-space {
+    width: 15px; /* Perkecil lagi jarak antar teks */
+  }
+}

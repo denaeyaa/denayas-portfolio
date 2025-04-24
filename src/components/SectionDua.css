@@ -1,0 +1,162 @@
+.section-dua.simple-layout {
+  padding: 20px;
+  text-align: left;
+  font-family: 'Poppins';
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  margin-top: -30px;
+  background-color: white;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  margin-top: 5px;
+  margin-left: 35px;
+}
+
+.project-card.simple-card {
+  border-radius: 25px;
+  width: 350px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white; /* Latar belakang putih card */
+  border: 2px black;
+}
+
+.project-card.simple-card .project-image-container {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Rasio aspek gambar (bisa disesuaikan) */
+  overflow: hidden;
+}
+
+.project-card.simple-card .project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Gambar mengisi container dan di-crop jika perlu */
+  display: block;
+}
+
+.project-card.simple-card .project-info {
+  padding: 10px;
+  text-align: left;
+}
+
+.project-card.simple-card .project-title {
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-card.simple-card .project-description {
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #555; /* Warna teks deskripsi */
+}
+
+.project-card.simple-card .project-button {
+  display: inline-block;
+  background-color: #007bff; /* Warna tombol */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.project-card.simple-card .project-button:hover {
+  background-color: #0056b3; /* Warna tombol saat hover */
+}
+
+
+/* Untuk layar yang lebih kecil dari 1200px (misalnya tablet landscape) */
+@media (max-width: 1200px) {
+  .section-dua.simple-layout {
+    padding: 20px; /* Mungkin tidak perlu diubah, sesuaikan jika perlu */
+    margin-top: -20px; /* Sesuaikan margin-top jika perlu */
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px)); /* PERKECIL UKURAN MINIMUM LEBAR CARD */
+    margin-left: auto; /* Coba atur margin kiri menjadi auto untuk memusatkan */
+    margin-right: auto; /* Tambahkan margin kanan auto juga untuk memusatkan */
+    padding-left: 200px;
+    gap: 15px; /* Perkecil jarak antar card */
+    margin-left: 20px; /* Kurangi margin kiri */
+  }
+
+  .project-card.simple-card {
+    width: auto; /* Biarkan lebar card menyesuaikan dengan grid */
+  }
+
+  .project-card.simple-card .project-info {
+    padding: 10px; /* Perkecil sedikit padding info */
+  }
+
+  .project-card.simple-card .project-title {
+    font-size: 1.1em; /* Sedikit perkecil ukuran judul */
+    margin-bottom: 8px;
+  }
+
+  .project-card.simple-card .project-description {
+    font-size: 0.85em; /* Sedikit perkecil ukuran deskripsi */
+    margin-bottom: 12px;
+  }
+
+  .project-card.simple-card .project-button {
+    font-size: 0.8em; /* Sedikit perkecil ukuran tombol */
+    padding: 8px 12px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .section-dua.simple-layout {
+    padding: 15px;
+    margin-top: -15px; /* Sesuaikan margin-top */
+  }
+
+  .projects-container {
+    margin-left: -15px; /* Kurangi margin kiri */
+    gap: 15px;
+  }
+
+  .project-card.simple-card {
+    width: 100%; /* Lebar card mengisi container */
+  }
+}
+
+/* Untuk layar yang lebih kecil dari 480px (misalnya mobile) */
+@media (max-width: 480px) {
+  .section-dua.simple-layout {
+    padding: 10px;
+    margin-top: -10px; /* Sesuaikan margin-top */
+  }
+
+  .projects-container {
+    margin-left: 10px; /* Kurangi margin kiri */
+    gap: 10px;
+  }
+
+  .project-card.simple-card .project-info {
+    padding: 10px; /* Sesuaikan padding info */
+  }
+
+  .project-card.simple-card .project-title {
+    font-size: 1em; /* Perkecil lagi ukuran font judul */
+    margin-bottom: 5px;
+  }
+
+  .project-card.simple-card .project-description {
+    font-size: 0.8em; /* Perkecil lagi ukuran font deskripsi */
+    margin-bottom: 10px;
+  }
+
+  .project-card.simple-card .project-button {
+    padding: 6px 10px; /* Perkecil lagi padding tombol */
+    font-size: 0.75em; /* Perkecil lagi ukuran font tombol */
+  }
+}

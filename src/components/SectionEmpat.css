@@ -1,0 +1,256 @@
+/* SectionEmpat.css */
+
+.section-empat.small-layout {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Untuk memposisikan tombol navigasi */
+}
+
+.section-empat .slider-container {
+  display: flex;
+  gap: 20px;
+  margin-left: -5px;
+  margin-top: 5px;
+  overflow-x: auto;
+  padding-bottom: 15px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.section-empat .slider-container.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.section-empat .slider-container.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.project-card.small-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.project-card.small-card .project-image-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.project-card.small-card .project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card.small-card .project-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.project-card.small-card .project-title {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-card.small-card .project-description {
+  font-size: 0.8em;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.project-card.small-card .project-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.7em;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card.small-card .project-button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.project-card.small-card .project-button:hover {
+  background-color: #0056b3;
+}
+
+.project-card.small-card .project-button:hover::before {
+  width: 100%;
+}
+
+.section-empat .slider-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  gap: 20px;
+  border: none;
+}
+
+.section-empat .slider-navigation .nav-button {
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-size: 1.2em;
+}
+
+.section-empat .slider-navigation .nav-button:hover {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.section-empat .slider-navigation .nav-button.left-arrow,
+.section-empat .slider-navigation .nav-button.right-arrow {
+  font-size: 0.8em; /* Ukuran ikon panah */
+  padding: 8px 12px;
+}
+
+
+/* Untuk layar yang lebih kecil dari 1200px (misalnya tablet landscape) */
+@media (max-width: 1200px) {
+  .section-empat.small-layout {
+    padding: 20px; /* Sesuaikan jika perlu */
+  }
+
+  .projects-container.slider-container {
+    gap: 15px; /* Sedikit kurangi jarak antar card */
+    margin-left: 10px; /* Kurangi margin kiri agar lebih senter */
+    margin-right: 10px; /* Tambah margin kanan agar lebih senter */
+    overflow-x: auto; /* Pastikan overflow tetap ada untuk scroll */
+  }
+
+  .project-card.small-card {
+    width: 250px; /* PERKECIL LAGI LEBAR CARD */
+    flex-shrink: 0; /* Pastikan card tidak menyusut */
+  }
+
+  .project-card.small-card .project-info {
+    padding: 10px; /* Kurangi padding info card */
+  }
+
+  .project-card.small-card .project-title {
+    font-size: 0.9em; /* Sedikit perkecil ukuran judul card */
+    margin-bottom: 6px;
+  }
+
+  .project-card.small-card .project-description {
+    font-size: 0.75em; /* Perkecil lagi ukuran deskripsi card */
+    margin-bottom: 10px;
+  }
+
+  .project-card.small-card .project-button {
+    padding: 6px 10px; /* Perkecil lagi sedikit padding tombol card */
+    font-size: 0.7em; /* Perkecil lagi ukuran font tombol card */
+  }
+
+  .section-empat .slider-navigation {
+    margin-top: 10px; /* Sesuaikan margin top navigasi */
+    gap: 10px; /* Kurangi gap tombol navigasi */
+  }
+
+  .section-empat .slider-navigation .nav-button {
+    font-size: 0.9em; /* Sesuaikan ukuran font ikon navigasi */
+    padding: 6px 10px;
+  }
+
+}
+
+/* Untuk layar yang lebih kecil dari 768px (misalnya tablet) */
+@media (max-width: 768px) {
+  .section-empat.small-layout {
+    padding: 15px;
+  }
+
+  .project-card.small-card {
+    width: 250px; /* Perkecil ukuran card */
+  }
+
+  .project-card.small-card .project-info {
+    padding: 10px; /* Kurangi padding info card */
+  }
+
+  .project-card.small-card .project-title {
+    font-size: 0.9em; /* Perkecil ukuran judul card */
+    margin-bottom: 8px;
+  }
+
+  .project-card.small-card .project-description {
+    font-size: 0.75em; /* Perkecil ukuran deskripsi card */
+    margin-bottom: 10px;
+  }
+
+  .project-card.small-card .project-button {
+    padding: 6px 10px; /* Perkecil padding tombol card */
+    font-size: 0.65em; /* Perkecil ukuran font tombol card */
+  }
+
+  .section-empat .slider-navigation {
+    margin-top: 10px; /* Kurangi margin top navigasi */
+    gap: 10px; /* Kurangi gap tombol navigasi */
+  }
+
+  .section-empat .slider-navigation .nav-button {
+    font-size: 0.9em; /* Perkecil ukuran font ikon navigasi */
+    padding: 6px 10px;
+  }
+}
+
+/* Untuk layar yang lebih kecil dari 480px (misalnya mobile) */
+@media (max-width: 480px) {
+  .section-empat.small-layout {
+    padding: 10px;
+  }
+
+  .project-card.small-card {
+    width: 200px; /* Perkecil lagi ukuran card */
+  }
+
+  .project-card.small-card .project-title {
+    font-size: 0.8em; /* Perkecil lagi ukuran judul card */
+    margin-bottom: 5px;
+  }
+
+  .project-card.small-card .project-description {
+    font-size: 0.7em; /* Perkecil lagi ukuran deskripsi card */
+    margin-bottom: 8px;
+  }
+
+  .project-card.small-card .project-button {
+    padding: 5px 8px; /* Perkecil lagi padding tombol card */
+    font-size: 0.6em; /* Perkecil lagi ukuran font tombol card */
+  }
+
+  .section-empat .slider-navigation {
+    margin-top: 8px; /* Kurangi margin top navigasi */
+    gap: 8px; /* Kurangi gap tombol navigasi */
+  }
+
+  .section-empat .slider-navigation .nav-button {
+    font-size: 0.8em; /* Perkecil lagi ukuran font ikon navigasi */
+    padding: 5px 8px;
+  }
+}
