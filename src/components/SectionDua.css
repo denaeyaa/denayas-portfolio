@@ -17,7 +17,7 @@
 }
 
 .project-card.simple-card {
-  border-radius: 25px;
+  border-radius: 15px;
   width: 350px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -58,7 +58,7 @@
 
 .project-card.simple-card .project-button {
   display: inline-block;
-  background-color: #007bff; /* Warna tombol */
+  background-color: #210C6E; /* Warna tombol */
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
@@ -68,7 +68,7 @@
 }
 
 .project-card.simple-card .project-button:hover {
-  background-color: #0056b3; /* Warna tombol saat hover */
+  background-color: #210C6E; /* Warna tombol saat hover */
 }
 
 
@@ -120,7 +120,8 @@
   }
 
   .projects-container {
-    margin-left: -15px; /* Kurangi margin kiri */
+    grid-template-columns: repeat(auto-fit, minmax(230px, 190px));
+    margin-left: 55px; /* Kurangi margin kiri */
     gap: 15px;
   }
 
@@ -137,7 +138,8 @@
   }
 
   .projects-container {
-    margin-left: 10px; /* Kurangi margin kiri */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 100px));
+    margin-left: 230px; /* Kurangi margin kiri */
     gap: 10px;
   }
 

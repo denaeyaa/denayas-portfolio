@@ -10,7 +10,7 @@
   .marquee-text {
     font-size: 1.2em;
     font-family: Akira;
-    color: black;
+    color: rgb(0, 0, 0);
     white-space: nowrap; /* Mencegah teks pindah baris */
   }
   

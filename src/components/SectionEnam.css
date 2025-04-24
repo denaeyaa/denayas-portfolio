@@ -3,7 +3,8 @@
 .section-enam {
   padding: 50px;
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  font-family: 'Poppins';
 }
 
 .section-enam h2 {
@@ -39,7 +40,7 @@
 
 .module-button {
   display: inline-block;
-  background-color: #28a745; /* Warna tombol hijau */
+  background-color: #210C6E; /* Warna tombol hijau */
   color: white;
   padding: 8px 15px;
   border-radius: 5px;
@@ -129,7 +130,7 @@
   }
 
   .module-card {
-    width: 350px; /* Biarkan lebar lebih besar agar tidak terlalu sempit saat satu kolom */
+    width: 230px; /* Biarkan lebar lebih besar agar tidak terlalu sempit saat satu kolom */
   }
 
   .module-info {
@@ -148,7 +149,7 @@
 }
 
 /* Untuk layar yang lebih kecil dari 576px (misalnya mobile) */
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   .section-enam {
     padding: 20px;
   }
@@ -158,7 +159,7 @@
   }
 
   .module-card {
-    width: 100%; /* Lebar card mengisi container */
+    width: 120px; /* Lebar card mengisi container */
   }
 
   .module-info {
@@ -166,12 +167,12 @@
   }
 
   .module-title {
-    font-size: 1em;
+    font-size: 0.8em;
     margin-bottom: 5px;
   }
 
   .module-button {
-    font-size: 0.75em;
+    font-size: 0.7em;
     padding: 4px 8px;
   }
 }

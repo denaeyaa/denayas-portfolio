@@ -1,5 +1,6 @@
 .home-section {
-    background-color: #0138C8;
+    /*background-color: #0138C8;*/
+    background-color: #210C6E;
     font-family: 'CelonaCameli';
     display: flex;
     justify-content: center;
@@ -39,7 +40,7 @@
   /* Untuk layar yang lebih kecil dari 768px (misalnya tablet portrait) */
   @media (max-width: 768px) {
     .home-text {
-      font-size: 3em;
+      font-size: 6.5em;
     }
   
     /* Perkecil ukuran card */
@@ -69,14 +70,14 @@
   /* Untuk layar yang lebih kecil dari 480px (misalnya mobile) */
   @media (max-width: 480px) {
     .home-text {
-      font-size: 2.8em; /* Mungkin ini masih terlalu besar, coba perkecil lagi */
-      width: 190px; /* Pastikan lebar teks tidak melebihi lebar layar */
+      font-size: 3.8em; /* Mungkin ini masih terlalu besar, coba perkecil lagi */
+      width: 300px; /* Pastikan lebar teks tidak melebihi lebar layar */
     }
   
     /* Hilangkan card pada layar sangat kecil jika terlalu ramai */
     .home-section > div:nth-child(2),
     .home-section > div:nth-child(3) {
-      display: none;
+      width: 5px;
     }
   }
   

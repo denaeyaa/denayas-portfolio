@@ -69,7 +69,7 @@ const SectionTujuh: React.FC<SectionTujuhProps> = ({ id }) => {
   ];
 
   return (
-    <div id={id} className="section-tujuh" style={{ backgroundColor: '#2c2c54' }}>
+    <div id={id} className="section-tujuh" style={{ backgroundColor: '#210C6E' }}>
       <div className="certificates-container-horizontal">
         <Slider {...settings}>
           {certificatesData.map((certificate, index) => (

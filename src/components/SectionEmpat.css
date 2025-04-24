@@ -5,6 +5,7 @@
   padding: 20px;
   text-align: center;
   position: relative; /* Untuk memposisikan tombol navigasi */
+  font-family: 'Poppins';
 }
 
 .section-empat .slider-container {
@@ -68,7 +69,7 @@
 
 .project-card.small-card .project-button {
   display: inline-block;
-  background-color: #007bff;
+  background-color: #210C6E;
   color: white;
   padding: 8px 12px;
   border-radius: 5px;
@@ -91,7 +92,7 @@
 }
 
 .project-card.small-card .project-button:hover {
-  background-color: #0056b3;
+  background-color: #210C6E;
 }
 
 .project-card.small-card .project-button:hover::before {
@@ -120,7 +121,7 @@
 .section-empat .slider-navigation .nav-button:hover {
   background-color: transparent;
   border: none;
-  color: white;
+  color: #210C6E;
 }
 
 .section-empat .slider-navigation .nav-button.left-arrow,
@@ -183,10 +184,11 @@
 @media (max-width: 768px) {
   .section-empat.small-layout {
     padding: 15px;
+    margin-left: 30px;
   }
 
   .project-card.small-card {
-    width: 250px; /* Perkecil ukuran card */
+    width: 200px; /* Perkecil ukuran card */
   }
 
   .project-card.small-card .project-info {
@@ -222,11 +224,42 @@
 /* Untuk layar yang lebih kecil dari 480px (misalnya mobile) */
 @media (max-width: 480px) {
   .section-empat.small-layout {
-    padding: 10px;
+    margin-left: 210px;
   }
 
   .project-card.small-card {
-    width: 200px; /* Perkecil lagi ukuran card */
+    width: 180px; /* Perkecil lagi ukuran card */
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    grid-template-rows: auto auto auto; /* Otomatis tinggi baris */
+    /* Atur posisi card */
+    & > :nth-child(1) {
+      grid-row: 1;
+      grid-column: 1;
+    }
+    & > :nth-child(2) {
+      grid-row: 1;
+      grid-column: 2;
+    }
+    & > :nth-child(3) {
+      grid-row: 1;
+      grid-column: 3;
+    }
+    & > :nth-child(4) {
+      grid-row: 2;
+      grid-column: 1;
+    }
+    & > :nth-child(5) {
+      grid-row: 2;
+      grid-column: 2;
+    }
+    & > :nth-child(6) {
+      grid-row: 2;
+      grid-column: 3;
+    }
+    & > :nth-child(7) {
+      grid-row: 3;
+      grid-column: 1 / -1; /* Membentang dari kolom 1 hingga akhir */
+    }
   }
 
   .project-card.small-card .project-title {
@@ -245,6 +278,7 @@
   }
 
   .section-empat .slider-navigation {
+    display: none;
     margin-top: 8px; /* Kurangi margin top navigasi */
     gap: 8px; /* Kurangi gap tombol navigasi */
   }

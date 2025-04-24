@@ -35,3 +35,19 @@
     text-align: center;
     margin: 0;
   }
+
+  @media (max-width: 480px) {
+    .floating-card{
+      width: 10px;
+      height: 15px;
+    }
+
+    .floating-card-image-container {
+      width: 47px;
+      height: 47px;
+    }
+
+    .floating-card-text {
+      font-size: 0.7em;
+    }
+  }

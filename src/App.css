@@ -32,7 +32,7 @@
 body {
   margin: 0;
   font-family: "Lexend Deca", sans-serif;
-  background-color: #ff0000;
+  background-color: #210C6E;
   color: #000000;
   display: flex; /* Gunakan flex untuk mengatur sidebar dan content */
   flex-direction: column; /* Atur item secara vertikal */

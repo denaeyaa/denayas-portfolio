@@ -5,6 +5,7 @@
   display: flex; /* Jadikan container utama flex */
   align-items: flex-start; /* Sejajarkan item dari atas */
   padding: 20px;
+  font-family: 'Poppins';
   gap: 30px; /* Jarak antara preview dan info download */
 }
 
@@ -18,7 +19,7 @@
   position: relative;
   cursor: zoom-in; /* Default cursor untuk zoom */
   flex-shrink: 0; /* Agar tidak menyusut */
-  margin-left: 320px;
+  margin-left: 280px;
 }
 
 .preview-container.cv-preview:active {
@@ -79,13 +80,13 @@
 
 .lorem-ipsum {
   font-size: 0.9em;
-  color: #555;
+  color: #000000;
   margin-bottom: 15px;
   text-align: left;
 }
 
 .download-button {
-  background-color: #007bff;
+  background-color: #210C6E;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -102,26 +103,27 @@
 }
 
 .download-button:hover {
-  background-color: #0056b3;
+  background-color: #210C6E;
 }
 
 
 /* Untuk layar yang lebih kecil dari 768px (misalnya tablet portrait) */
 @media (max-width: 768px) {
   .preview-container.cv-preview {
-    width: 300px; /* Lebar preview lebih besar lagi */
+    width: 190px; /* Lebar preview lebih besar lagi */
   }
 }
 
 /* Untuk layar yang lebih kecil dari 576px (misalnya mobile) */
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   .section-lima.cv-section {
+    margin-left: 40px;
     padding: 15px;
     gap: 15px;
   }
 
   .preview-container.cv-preview {
-    width: 90%; /* Lebar preview hampir penuh */
+    width: 100px; /* Lebar preview hampir penuh */
   }
 
   .download-info {
@@ -129,7 +131,7 @@
   }
 
   .lorem-ipsum {
-    font-size: 0.85em;
+    font-size: 0.9em;
   }
 
   .download-button {

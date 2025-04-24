@@ -21,8 +21,8 @@
 }
 
 .certificate-card-horizontal-image-only {
-  background-color: #f9f9f9;
-  border-radius: 8px;
+  background-color: #210C6E;
+  border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 300px; /* Lebar card (sesuaikan) */
   margin: 20px 0;
@@ -63,7 +63,7 @@
 /* Untuk layar yang lebih kecil dari 1024px (saat slidesToShow menjadi 3) */
 @media (max-width: 1200px) {
   .certificate-card-horizontal-image-only {
-    margin-top: -10px;
+    margin-top: 0;
     width: 250px; /* Perkecil lebar card */
   }
 }
@@ -90,10 +90,11 @@
 /* Untuk layar yang lebih kecil dari 480px (mobile lebih kecil) */
 @media (max-width: 480px) {
   .certificates-container-horizontal {
-    width: 95%; /* Lebar container hampir penuh di mobile kecil */
+    width: 240px; /* Lebar container hampir penuh di mobile kecil */
+    margin-left: -10px;
   }
 
   .certificate-card-horizontal-image-only {
-    margin: 10px auto; /* Sesuaikan margin */
+    margin: 1px auto; /* Sesuaikan margin */
   }
 }

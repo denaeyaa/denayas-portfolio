@@ -1,5 +1,5 @@
 .section-sembilan {
-    background-color: #7A68F0;
+    background-color: #210C6E;
     height: 50px; /* Tinggi kecil untuk marquee */
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
   .marquee-text {
     font-size: 1.2em;
     font-family: Akira;
-    color: black;
+    color: #7A68F0;
     white-space: nowrap; /* Mencegah teks pindah baris */
   }
   
