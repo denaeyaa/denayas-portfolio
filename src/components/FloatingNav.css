@@ -90,3 +90,20 @@
     /*background-color: rgba(0, 0, 0, 0.1);*/
     background-color: rgba(76, 153, 198, 0.1);
   }
+
+  @media (max-width: 1200px) {
+    .nav-capsule {
+      font-size: 1.3em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .floating-nav {
+      width: 50px;
+      height: 20px;
+  }
+    .nav-capsule {
+      font-size: 1em;
+  }
+
+  }

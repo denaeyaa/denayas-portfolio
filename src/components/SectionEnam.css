@@ -176,3 +176,13 @@
     padding: 4px 8px;
   }
 }
+
+@media (max-width: 370px) {
+  .module-card {
+    width: 100px; /* Lebar card mengisi container */
+  }
+
+  .module-button {
+    font-size: 0.5em;
+  }
+}

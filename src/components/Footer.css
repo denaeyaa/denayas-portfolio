@@ -187,11 +187,13 @@
 @media (max-width: 480px) {
   .footer-empat-bagian {
     padding: 20px 2px; /* Kurangi lagi padding */
-    margin-left: -10px;
+    margin-left: 15px;
+    font-size: 0.7em;
+    margin-bottom: -20px;
   }
 
   .footer-section h3 {
-    font-size: 1em; /* Perkecil ukuran judul */
+ /* Perkecil ukuran judul */
     margin-bottom: 10px;
     display: none;
   }
@@ -224,5 +226,14 @@
 
   .newsletter-form button[type="submit"] {
     padding: 8px 12px; /* Kurangi padding tombol */
+  }
+}
+
+@media (max-width: 370px) {
+  .footer-empat-bagian {
+    font-size: 0.7em;
+    margin-left: 15px;
+    padding-bottom: -40px;
+    margin-bottom: -20px;
   }
 }

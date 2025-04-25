@@ -224,7 +224,7 @@
 /* Untuk layar yang lebih kecil dari 480px (misalnya mobile) */
 @media (max-width: 480px) {
   .section-empat.small-layout {
-    margin-left: 210px;
+    margin-left: 215px;
   }
 
   .project-card.small-card {
@@ -286,5 +286,14 @@
   .section-empat .slider-navigation .nav-button {
     font-size: 0.8em; /* Perkecil lagi ukuran font ikon navigasi */
     padding: 5px 8px;
+  }
+}
+
+@media (max-width: 370px) {
+  .project-card.small-card {
+    width: 190px;
+  }
+  .section-empat.small-layout {
+    margin-left: 240px;
   }
 }

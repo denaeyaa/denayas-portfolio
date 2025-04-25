@@ -139,3 +139,9 @@
     padding: 8px 15px;
   }
 }
+
+@media (max-width: 370px) {
+  .section-lima.cv-section {
+    margin-left: 50px;
+  }
+}

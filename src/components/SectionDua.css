@@ -139,8 +139,8 @@
 
   .projects-container {
     grid-template-columns: repeat(auto-fit, minmax(120px, 100px));
-    margin-left: 230px; /* Kurangi margin kiri */
-    gap: 10px;
+    margin-left: 235px; /* Kurangi margin kiri */
+    gap: 5px;
   }
 
   .project-card.simple-card .project-info {
@@ -161,4 +161,12 @@
     padding: 6px 10px; /* Perkecil lagi padding tombol */
     font-size: 0.75em; /* Perkecil lagi ukuran font tombol */
   }
+}
+
+@media (max-width: 370px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 80px));
+    margin-left: 252px;
+    gap: 5px;
+}
 }

@@ -77,13 +77,13 @@
     /* Hilangkan card pada layar sangat kecil jika terlalu ramai */
     .home-section > div:nth-child(2),
     .home-section > div:nth-child(3) {
-      width: 5px;
+      display: none;
     }
   }
   
   /* Untuk layar yang lebih kecil dari 375px (misalnya iPhone SE atau yang lebih kecil) */
-  @media (max-width: 375px) {
+  @media (max-width: 370px) {
     .home-text {
-      font-size: 1.5em; /* Coba ukuran yang lebih kecil lagi */
+      font-size: 3.5em; /* Coba ukuran yang lebih kecil lagi */
     }
   }  

@@ -37,7 +37,7 @@ const SectionDua: React.FC<SectionDuaProps> = ({ id }) => {
       imageUrl: project1Image,
       title: 'AI Learning Lab Website',
       description: 'Proyek lucu',
-      liveUrl: 'https://project-satu.com',
+      liveUrl: 'https://www.ai-learninglab.com/',
     },
     {
       imageUrl: '/images/project2.jpg',
